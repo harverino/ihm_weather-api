@@ -9,24 +9,29 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #43AFFC;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #c9c9c9, #9b9b9b);
 }
 ::selection{
   color: #fff;
-  background: #43AFFC;
+  background: #2c2c2c;
 }
 .wrapper{
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border-radius: 7px;
+  box-shadow: 7px 7px 20px rgba(87, 87, 87, 0.05);
   width: 400px;
   background: #fff;
-  border-radius: 7px;
-  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 2px 1px #5c5c5c;
 }
+
 .wrapper header{
   display: flex;
   font-size: 21px;
   font-weight: 500;
-  color: #43AFFC;
+  color: #2c2c2c;
   padding: 16px 15px;
   align-items: center;
   border-bottom: 1px solid #ccc;
@@ -80,7 +85,7 @@ header i{
   border: 1px solid #ccc;
 }
 .input-part input:is(:focus, :valid){
-  border: 2px solid #43AFFC;
+  border: 2px solid #2c2c2c;
 }
 .input-part input::placeholder{
   color: #bfbfbf;
@@ -96,7 +101,7 @@ header i{
   justify-content: center;
 }
 .separator::before{
-  content: "or";
+  content: "ou";
   color: #b3b3b3;
   font-size: 19px;
   padding: 0 15px;
@@ -105,11 +110,11 @@ header i{
 .input-part button{
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
+  background: #2c2c2c;
   transition: 0.3s ease;
 }
 .input-part button:hover{
-  background: #1d9ffc;
+  background: #1a1919;
 }
 
 .wrapper .weather-part{
@@ -169,7 +174,7 @@ header i{
   justify-content: center;
 }
 .column i{
-  color: #5DBBFF;
+  color: #2c2c2c;
   font-size: 40px;
 }
 .column.humidity{
