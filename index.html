@@ -2,24 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Weather App in JavaScript | CodingNepal</title>
+    <title>IHM - Princípios Ergonômicos</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class="wrapper">
-      <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+      <header><i class='bx bx-left-arrow-alt'></i>Previsão do tempo</header>
       <section class="input-part">
         <p class="info-txt"></p>
         <div class="content">
-          <input type="text" spellcheck="false" placeholder="Enter city name" required>
+          <input type="text" spellcheck="false" placeholder="Insira o nome da cidade" required>
           <div class="separator"></div>
-          <button>Get Device Location</button>
+          <button>Obtenha a sua localização</button>
         </div>
       </section>
       <section class="weather-part">
-        <img src="" alt="Weather Icon">
+        <img src="assets/img/wind.png" alt="Weather Icon">
         <div class="temp">
           <span class="numb">_</span>
           <span class="deg">°</span>C
@@ -37,21 +37,19 @@
                 <span class="numb-2">_</span>
                 <span class="deg">°</span>C
               </div>
-              <p>Feels like</p>
+              <p>Sensação térmica</p>
             </div>
           </div>
           <div class="column humidity">
             <i class='bx bxs-droplet-half'></i>
             <div class="details">
               <span>_</span>
-              <p>Humidity</p>
+              <p>Umidade</p>
             </div>
           </div>
         </div>
       </section>
     </div>
-    
     <script src="script.js"></script>
-
   </body>
 </html>
