@@ -12,6 +12,7 @@ body{
   height: 100vh;
   background-image: linear-gradient(to bottom right, #c9c9c9, #9b9b9b);
 }
+
 ::selection{
   color: #fff;
   background: #2c2c2c;

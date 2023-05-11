@@ -31,7 +31,7 @@ locationBtn.addEventListener("click", () =>{
 
 function onSuccess(position){
     const {latitude, longitude} = position.coords;
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${ApiKey}`;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${ApiKey}&lang=pt_br`;
     fetchData();
 }
 
@@ -45,13 +45,13 @@ function fetchData(){
     infoTxt.classList.add("Aguardando");
     fetch(api).then(res => res.json()).then(result => weatherDetails(result)).catch(() =>{
         infoTxt.innerText = "Erro";
-        infoTxt.classList.replace("aguardando", "erro");
+        infoTxt.classList.replace("Aguardando...", "Erro");
     });
 }
 
 function weatherDetails(info){
     if(info.cod == "404"){
-        infoTxt.classList.replace("aguardando", "erro");
+        infoTxt.classList.replace("Aguardando...", "Erro");
         infoTxt.innerText = `${inputField.value} Não é uma cidade válida`;
     }else{
         const city = info.name;
@@ -88,3 +88,4 @@ function weatherDetails(info){
 arrowBack.addEventListener("click", ()=>{
     wrapper.classList.remove("active");
 });
+
